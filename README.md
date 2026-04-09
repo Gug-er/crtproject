@@ -35,7 +35,7 @@ Now the `crtproject` command is available in your terminal.
 ⚠️ On Windows, make sure the Python\Scripts folder is added to your PATH.
 
 ## 🚀 Usage
-
+⚠️ In `cli.py` change path to your already existing directory 
 Syntax:
 
 ```bash
