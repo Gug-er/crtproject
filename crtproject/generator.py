@@ -15,6 +15,8 @@ def generate_project(template: str, name: str, base_path: Path):
     if project_path.exists():
         raise FileExistsError(f'Project {project_path} already exists')
 
-    shutil.copytree(template_path, project_path)
+    shutil.copytree(template_path,
+                    project_path,
+                    ignore=shutil.ignore_patterns('.gitkeep'))
 
     print(f'Created project {name}')
